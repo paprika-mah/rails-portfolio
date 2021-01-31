@@ -10,13 +10,24 @@
   </head>
 
   <body>
-    <div id = "container">
-      <header>
-        <%= render "shared/header" %>
-      </header>
-      <main>
-        <%= yield %>
-      </main>
+    <div class="container-fluid">
+      <div class="row">
+        <header>
+          <%= render "shared/header" %>
+        </header>
+      </div>
+      <div class="row">
+        <div class="col-sm-8">
+          <main>
+            <%= yield %>
+          </main>
+        </div>
+          <div class="col-sm-4">
+            <aside id="sidebar">
+              <%= render "shared/sidebar"%>
+            </aside>
+          </div>
+        </div>
       <footer>
         <%= render "shared/footer" %>
       </footer>

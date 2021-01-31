@@ -1,9 +1,12 @@
 @import "reset";
 @import "bootstrap";
-main {
+main, aside#sidebar {
   padding: 100px 10px 10px 10px;
 }
-
+.blog h2{
+  margin: 25px 0px;
+}
 footer {
+  // clear: both;
   text-align: center;
 }
